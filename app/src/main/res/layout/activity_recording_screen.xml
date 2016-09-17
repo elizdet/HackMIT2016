@@ -7,23 +7,24 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.elizabethdetiene.hackmit2016.MainActivity">
+    tools:context="com.elizabethdetiene.hackmit2016.recordingScreen">
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Record my Speech"
-        android:id="@+id/button"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="RecordSpeech" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Recording Screen"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 
     <Button
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Previous Speeches"
-        android:id="@+id/button2"
+        android:text="Done"
+        android:id="@+id/button3"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/button"
-        android:onClick="PreviousSpeeches" />
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>
